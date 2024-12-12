@@ -8,8 +8,8 @@ function Home() {
     const [movies, setMovies] = useState([]);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(true);
-    const [currentPage, setCurrentPage] = useState(1); // Track current page
-    const [hasMore, setHasMore] = useState(true); // Flag to indicate if there are more movies to load
+    const [currentPage, setCurrentPage] = useState(1);
+    const [hasMore, setHasMore] = useState(true);
 
     const loadMovies = async (page) => {
       try {

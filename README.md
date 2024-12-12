@@ -1,8 +1,85 @@
-# React + Vite
+```markdown
+# React Kinopoisk App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Скриншоты
 
-Currently, two official plugins are available:
+![Главная страница](./public/screenshot_main.png)
+_Главная страница приложения_
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Страница поиска](./public/screenshot_search.png)
+_Страница поиска_
+
+## Описание
+
+Это простое React-приложение, которое использует публичный API Кинопоиска для отображения списка популярных фильмов за текущий год. Приложение позволяет просматривать основную информацию о фильмах: название, год выпуска, рейтинг и постер. **При нажатии на карточку фильма происходит перенаправление на страницу этого фильма на сайте Кинопоиска.**
+
+## Используемые технологии
+
+*   **React** - JavaScript-библиотека для создания пользовательских интерфейсов.
+*   **Vite** - инструмент для быстрой сборки фронтенд-проектов.
+*   **Kinopoisk API** - неофициальное публичное API Кинопоиска.
+*   **React Router** - библиотека для управления маршрутизацией в приложении.
+
+## Установка и запуск
+
+**Перед запуском необходимо получить API-ключ Кинопоиска и настроить переменные окружения.**
+
+**1. Получение API-ключа:**
+
+*   Перейдите на сайт [kinopoisk.dev](https://kinopoisk.dev/).
+*   Нажмите на кнопку "Получить доступ к API", после чего вы будете перенаправлены на Telegram-бота сервиса.
+*   Либо перейдите напрямую в Telegram-бот по ссылке: [https://t.me/kinopoiskdev_bot](https://t.me/kinopoiskdev_bot).
+*   Следуйте инструкциям бота, чтобы получить ваш персональный API-ключ.
+
+**2. Настройка переменных окружения:**
+
+*   Создайте файл `.env` в корне проекта (в той же папке, где находится `package.json`).
+*   Добавьте в файл `.env` строку с вашим API-ключом, используя следующий формат:
+
+    ```
+    VITE_KINOPOISK_API_KEY=ваш_API_ключ
+    ```
+
+    Замените `ваш_API_ключ` на ключ, полученный на предыдущем шаге.
+
+**3. Клонирование репозитория:**
+
+```bash
+git clone https://github.com/bugweaver/react-kinopoisk-app.git
+```
+
+**4. Переход в директорию проекта:**
+
+```bash
+cd react-kinopoisk-app
+```
+
+**5. Установка зависимостей:**
+
+```bash
+npm install
+```
+
+**6. Запуск приложения:**
+
+```bash
+npm run dev
+```
+
+Приложение будет доступно по адресу `http://localhost:5173/`.
+
+## Скриншоты
+
+![Скриншот главной страницы](./public/screenshot_main.png)
+_Главная страница приложения_
+
+![Скриншот детальной страницы](./public/screenshot_detailed.png)
+_Страница детальной информации о фильме_
+
+## Лицензия
+
+Этот проект распространяется под лицензией MIT. Подробнее смотрите в файле [LICENSE](LICENSE).
+
+## Автор
+
+[bugweaver](https://github.com/bugweaver)
